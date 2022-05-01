@@ -1,0 +1,20 @@
+<div class="container wrapper">
+    <div class="block">
+      <h3>Register</h3>
+  
+      <form [formGroup]="register">
+        
+        <input type="text" class="form-control logininput" placeholder="Enter Name" formControlName="name" />
+     
+        <input type="text" class="form-control logininput" placeholder="Enter Email" formControlName="email" />
+        <div class="btn-group">
+          <button class="btn btn-primary" (click)="gotoLogin()" >
+            Login
+          </button>
+          <button class="btn btn-primary" (click)="registerSubmit(register.value)" [disabled]="register.invalid">Register</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  

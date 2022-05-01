@@ -1,0 +1,19 @@
+<div class="container wrapper">
+  <div class="block">
+    <h3>Login</h3>
+
+    <form [formGroup]="login">
+      
+      <input type="text" class="form-control logininput" placeholder="Enter Name" formControlName="name" />
+   
+      <input type="text" class="form-control logininput" placeholder="Enter Email" formControlName="email" />
+      <div class="btn-group">
+        <button class="btn btn-primary" type="button" (click)="loginSubmit(login.value)" [disabled]="login.invalid">
+          Login
+        </button>
+        <button class="btn btn-primary" (click)="gotoSignup()">Register</button>
+      </div>
+      
+    </form>
+  </div>
+</div>

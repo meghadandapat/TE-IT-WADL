@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+.wrapper {
+
+ margin: auto;
+  top: 20%;
+  left: 40%;
+
+  margin: 10%;
+  padding: 5%;
+  background-color: antiquewhite;
+
+  width: 80%;
+  border-radius: 2%;
+  overflow: auto;
+}
+
+button {
+  padding: 2%;
+  background-color: skyblue;
+  border: none;
+  margin-right: 10%;
+  
+}
+.block {
+  width: 50%;
+  height: 100%;
+}
+.logininput {
+
+  border: none;
+  margin-bottom: 5%;
+  padding: 2%;
+  width: 200% !important;
+
+}
+
+.userform{
+  background:#fffcf8aa ;
+  padding:5%;
+  margin:1%;
+}
+
+.reset{
+  margin-top:1%;
+  margin-right: 2%;
+}
+
+.submit{
+  margin-top:1%;
+  margin-right: 2%;
+}
