@@ -1,119 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1B</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <style>
-        th {
-            text-align: left;
-        }
+  <body>
+    <div class="container">
+      <button
+        class="btn btn-outline-success mt-5"
+        data-toggle="modal"
+        data-target="#addNewUser"
+      >
+        Add New User
+      </button>
+      <table class="table table-striped table-bordered my-5">
+        <thead>
+          <tr>
+            <th scope="col">Sr No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
 
-        table{
-            margin-top: 2%;
-            
-        }
-        td,
-        th {
-            width: max-content;
-            padding: 10px;
-            border: 1px solid rgb(183, 157, 157);
-           
-        }
-        .wrapper{
-            background-color: antiquewhite;
-            padding: 2%;
-            margin: auto;
-            margin-top: 5%;
-            width: 80%;   
-            border-radius: 6px;
-        }
-        input{
-            border: none;
-            padding: 1%;
-            border-radius: 5%;
-            margin-bottom: 2%;
-        }
-    </style>
-</head>
+      <div class="modal fade" id="addNewUser">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enter details</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="text">Name</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="text">Username</label>
+                  <input type="text" class="form-control" id="username" />
+                </div>
+                <div class="form-group">
+                  <label for="text">City</label>
+                  <input type="text" class="form-control" id="city" />
+                </div>
 
-<body class="container">
-    <div class="wrapper">
-        <h2>Hello! </h2>
-        <input id="username" type="text" value="" placeholder="Enter your name">
-        <br>
-        <input id="email" type="text" value="" placeholder="Enter email id">
-
-        <br>
-        <button class="btn btn-primary" type="submit" onClick="submitFunc()" id="submitBtn">Add User</button>
-        <p id="serverResponse"></p>
-        <button class="btn btn-primary" type="submit" onClick="viewUsers()" id="submitBtn">View User</button>
-        <p id="userInfo"></p>
+                <div class="form-group">
+                  <label for="text">phone</label>
+                  <input type="text" class="form-control" id="phone" />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" />
+                </div>
+                <button
+                  type="submit"
+                  id="btn"
+                  data-dismiss="modal"
+                  class="btn btn-primary"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
 
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-<script type="text/javascript">
-    var arr = []
-    function submitFunc() {
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            const serverResponse = document.getElementById("serverResponse");
-            serverResponse.innerHTML = this.responseText;
-
-        };
-        var name1 = document.getElementById("username").value;
-        var email1 = document.getElementById("email").value;
-
-        arr.push({ name: name1, email: email1 })
-        localStorage.setItem("users", JSON.stringify(arr));
-        console.log(arr);
-        xhr.open("POST", "dom.php");
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send("name=" + name1 + "&email=" + email1);
-        alert("User added");
-    }
-
-    function viewUsers() {
-        var storedNames = JSON.parse(localStorage.getItem("users"));
-        for (i in storedNames) {
-            const userInfo = document.getElementById("userInfo");
-            userInfo.innerHTML = storedNames[i].name;
-            console.log(storedNames[i].name);
-        }
-        var col = [];
-        for (var i = 0; i < storedNames.length; i++) {
-            for (var key in storedNames[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-        var table = document.createElement("table");
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        for (var i = 0; i < storedNames.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = storedNames[i][col[j]];
-            }
-        }
-        var divContainer = document.getElementById("userInfo");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
