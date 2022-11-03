@@ -1,19 +1,20 @@
+
+# TE-IT-WADL
+
+
 ## Web Application Development Assignments of SPPU Third Year IT Syllabus (2019 pattern)
 
 
 
-| Assignment   | Problem Statement  |
+| Assignment No.  | Problem Statement  |
 | :--------------:  | :-------------- |
-|[Assignment 1-a](Assignment1-A)|Create a responsive web page which shows the ecommerce/college/exam admin dashboard with sidebar and statistics in cards using HTML, CSS and Bootstrap.|
-|[Assignment2-a](Assignment1-B)|Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX
-POST method and data list in new page.|
-|[Assignment3](Assignment3/Main.java)|Design and develop inheritance for a given case study, identify objects and relationships and implement inheritance wherever applicable. Employee class hasEmp_name, Emp_id, Address ,Mail_id, and Mobile_no as members. Inherit the classes: Programmer, Team Lead, Assistant Project Manager and Project Manager from employee class. Add Basic Pay (BP) as the member of all the inherited classes with 97% of BP as DA, 10 % of BP as HRA, 12% of BP as PF, 0.1% of BP for staffclub fund. Generate pay slips for the employees with their gross and net salary.|
-|[Assignment4](Assignment4/Main.java)|Design a base class shape with two double type values and member functions to input the data and compute_area() for calculating area of shape. Derive two classes: triangle and rectangle. Make compute_area() as abstract function and redefine this function in the derived class to suit their requirements. Write a program that accepts dimensions of triangle/rectangle and display calculated area. Implement dynamic binding for given case study.|
-|[Assignment5](Assignment5/Transport.java)|Design and develop a context for given case study and implement an interface for Vehicles. Consider the example of vehicles like bicycle, car and bike. All Vehicles have common functionalities such as Gear Change, Speed up and apply breaks. Make an interface and put allthese common functionalities. Bicycle, Bike, Car classes should be implemented for all these functionalities in their own class in their own way.|
-|[Assignment6](Assignment6/DisplayException.java)|Implement a program to handle Arithmetic exception, Array Index Out of Bounds. The user enters two numbers Num1 and Num2. The division of Num1 and Num2 is displayed. If Num1 and Num2 are not integers, the program would throw a Number Format Exception. If Num2 were zero, the program would throw an Arithmetic Exception. Display the exception.|
-|[Assignment7](Assignment7/Generics_Array.java)|Implement a generic program using any collection class to count the number of elements in a collection that have a specific property such as even numbers, odd number, prime number and palindromes. |
-|[Assignment8](Assignment8/Student.java)|Implement a program for maintaining a database of student records using Files. Student has Student_id,name, Roll_no, Class, marks and address. Display the data for few students.<br> 1. Create Database <br> 2. Display Database <br> 3. Delete Records <br> 4. Update Record <br> 5. Search Record|
-|[Assignment9](Assignment9/BankCustomer.java)|Using concepts of Object-Oriented programming develop solution for any one application <br> 1) Banking system having following operations : <br> 1. Create an account 2. Deposit money  3. Withdraw money  4. Honor daily withdrawal limit 5. Check the balance <br> 6. Display Account information. <br> 2) Inventory management system having following operations : <br> 1. List of all products 2. Display individual product information 3. Purchase 4. Shipping <br> 5. Balance stock6. Loss and Profit calculation.|
-|[Assignment10](Assignment10/Factory.java)|Implement Factory design pattern for the given context. Consider Car building process, which requires many steps from allocating accessories to final makeup. These steps should be written as methods and should be called while creating an instance of a specific car type. Hatchback, Sedan, SUV could be the subclasses of Car class. Car class and its subclasses, CarFactory and Test Factory Pattern should be implemented.|
-|[Assignment11](Assignment11/Customer.java)|Implement and apply Strategy Design pattern for simple Shopping Cart where three payment strategies are used such as Credit Card, PayPal, Bit Coin. Create an interface for strategy pattern and give concrete implementation for payment.|
+|[Assignment 1-a](Assignment1-A)| Create a responsive web page which shows the ecommerce/college/exam admin dashboard with sidebar and statistics in cards using HTML, CSS and Bootstrap.| 
+|[Assignment 1-b](Assignment1-B)| Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX POST method and data list in new page.|
+|[Assignment 2-a](Assignment2-A)| Create version control account on GitHub and using Git commands to create repository and push your code to GitHub. |
+|[Assignment 2-b](Assignment2-B)| Create Docker Container Environment (NVIDEIA Docker or any other). |
+|[Assignment 2-c](Assignment2-C)|Create an Angular application which will do following actions: Register User, Login User, Show User data on Profile Component.|
+|[Assignment 3-a](Assignment3-A)|Create a Node.JS Application which serves a static website.|
+|[Assignment 3-b](Assignment3-B)|Create four API using Node.JS, ExpressJS and MongoDB for CURD Operations on assignment 2.C |
+|[Assignment 4-a](Assignment4-A)|Create a simple Mobile Website using jQuery Mobile.|
+
 <hr>
